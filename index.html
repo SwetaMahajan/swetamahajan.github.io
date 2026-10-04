@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{%- comment -%}
+  The whole page is assembled from _data/. You shouldn't need to edit this file:
+  change _data/sections.yml to add, remove or reorder sections.
+{%- endcomment -%}
+
+{% include header.html %}
+
+{%- for section in site.data.sections %}
+  {%- assign items = site.data[section.data] %}
+  {%- if items and items.size > 0 %}
+<section class="section" id="{{ section.title | slugify }}">
+  <h2 class="section-title">{{ section.title }}</h2>
+  {%- case section.type %}
+    {%- when "publications" %}
+      {% include sections/publications.html items=items %}
+    {%- when "roles" %}
+      {% include sections/roles.html items=items %}
+    {%- when "list" %}
+      {% include sections/list.html items=items show=section.show %}
+    {%- else %}
+      {% include sections/timeline.html items=items show=section.show %}
+  {%- endcase %}
+</section>
+  {%- endif %}
+{%- endfor %}
+
+{%- assign profile = site.data.profile %}
+{%- if profile.footer or site.show_last_updated %}
+<footer class="footer">
+  {%- if profile.footer %}<span>{{ profile.footer | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>{% endif %}
+  {%- if site.show_last_updated %}<span>Last updated {{ site.time | date: "%B %-d, %Y" }}.</span>{% endif %}
+</footer>
+{%- endif %}

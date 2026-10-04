@@ -1,0 +1,36 @@
+{%- assign profile = site.data.profile -%}
+{%- assign page_title = site.title | default: profile.name -%}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<script>
+  // Apply the saved (or default) theme before the page draws, to avoid a flash.
+  (function () {
+    var theme = null;
+    try { theme = localStorage.getItem('theme'); } catch (e) {}
+    if (!theme) theme = {{ site.default_theme | default: "auto" | jsonify }};
+    if (theme === 'light' || theme === 'dark') document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ site.description | strip_newlines | strip }}">
+<meta name="author" content="{{ profile.name }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ site.description | strip_newlines | strip }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+{%- if profile.photo %}
+<meta property="og:image" content="{{ profile.photo | absolute_url }}">
+{%- endif %}
+<meta name="twitter:card" content="summary">
+
+{%- if site.favicon %}
+<link rel="icon" href="{{ site.favicon | relative_url }}">
+{%- endif %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">

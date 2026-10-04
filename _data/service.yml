@@ -1,0 +1,27 @@
+# ---------------------------------------------------------------------------
+#  Academic service: one line per role, e.g.
+#    Co-organizer:  item, item
+#    Reviewer:      item, item, item
+#
+#    role:  the bold label
+#    items: list of entries (Markdown supported, e.g. [name](https://...))
+#  Add more roles (e.g. "Area Chair") by copying a block.
+# ---------------------------------------------------------------------------
+
+- role: Co-organizer
+  items:
+    - "[eXCV Workshop (ECCV 2026)](https://excv-workshop.github.io/)"
+    - "[eXCV Workshop (ICCV 2025)](https://excv-workshop.github.io/2025/)"
+    
+
+- role: Reviewer
+  items:
+    - ICLR 2027
+    - CVPR 2026
+    - ECCV 2026
+
+- role: Workshop Reviewer
+  items:
+    - "XAI4CV (CVPR 2024,2025)"
+    - "eXCV (ECCV 2024)"
+    - "WiCV (CVPR 2025)"

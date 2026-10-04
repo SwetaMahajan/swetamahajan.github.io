@@ -1,0 +1,31 @@
+# ---------------------------------------------------------------------------
+#  Page sections, in the order they appear.
+#  Reorder, rename or delete entries to change the page.
+#
+#    title: heading shown on the page
+#    data:  which file in _data/ holds the items (without .yml)
+#    type:  how the items are displayed
+#             timeline      -> date + text           (news, talks, ...)
+#             publications  -> paper cards with image (publications)
+#             roles         -> "Role: item, item"     (academic service)
+#             list          -> one line of text each  (awards, ...)
+#    show:  (timeline / list only, optional) number of items shown before a
+#           "Show more" button. Leave out to always show everything.
+# ---------------------------------------------------------------------------
+
+- title: News
+  data: news
+  type: timeline
+  show: 6
+
+- title: Selected Publications
+  data: publications
+  type: publications
+
+- title: Talks
+  data: talks
+  type: timeline
+
+- title: Academic Service
+  data: service
+  type: roles

@@ -1,0 +1,4 @@
+<li class="timeline-item">
+    <span class="timeline-date">{{ include.item.date }}</span>
+    <span class="timeline-text">{{ include.item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+  </li>

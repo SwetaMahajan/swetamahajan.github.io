@@ -1,0 +1,67 @@
+# ---------------------------------------------------------------------------
+#  News, newest first.
+#    date: any text, e.g. "June 2026"
+#    text: Markdown supported, e.g. [link text](https://...)
+#  Tip: wrap text in double quotes if it contains a colon followed by a space.
+# ---------------------------------------------------------------------------
+
+
+- date: Aug 2026
+  text: "One paper, [TEVI](https://arxiv.org/abs/2606.07451), accepted at EMNLP (Findings) 2026. See you in Budapest!"
+
+- date: Jun 2026
+  text: "Attending [CVPR](https://cvpr.thecvf.com/) conference in Denver.  Interested in multimodal learning? Drop me a Hi!"
+
+- date: May 2026
+  text: "Two-week research visit with [Prof. Anna Rohrbach](https://anna-rohrbach.net/), in the Multimodal Grounded Learning group, Technische Universität (TU) Darmstadt, Germany."
+
+- date: May 2026
+  text: "Gave a talk on ‘Understanding and Improving Multimodal Models’ at the Computer Vision and Multimodal Learning Un-Workshop, Tübingen AI Center, Tübingen, Germany."
+
+- date: Apr 2026
+  text: "Co-organising the Explainable Computer Vision (eXCV) Workshop at the European Conference on Computer Vision (ECCV) 2026."
+
+# - date: Apr 2026
+#   text: "Paper on the modality gap accepted at the CVPR workshops [MMFM](https://mmfm-workshop.github.io/), [TRUE-V](https://trustworthy-ai-workshop.github.io/cvpr2026-TRUE-V/), [VisCon](https://sites.google.com/stanford.edu/visual-concepts-workshops/home) and [WiCV](https://sites.google.com/view/wicv/)."
+
+- date: June 2025
+  text: "Attending the [CVPR](https://cvpr.thecvf.com/) conference at Nashville."
+
+- date: May 2025
+  text: "Organising the Explainable Computer Vision (eXCV) Workshop at the International Conference on Computer Vision (ICCV) 2025. Find the previous edition of the workshop [here](https://excv-workshop.github.io/)."
+
+# - date: Apr 2025
+#   text: "Extended abstract accepted at the [Women in Computer Vision (WiCV) Workshop](https://sites.google.com/view/wicv-cvpr-2025), [CVPR](https://cvpr.thecvf.com/) 2025."
+
+# - date: Dec 2024
+#   text: "Presented my PhD thesis proposal as part of my PhD program ([RTG](https://www.neuroexplicit.org/)) requirement."
+
+- date: Nov 2024
+  text: "Invited talk at the DWS Colloquium, University of Mannheim, Germany."
+
+# - date: Nov 2024
+#   text: "Talk at the IMPRS Research Seminar, Max Planck Institute for Informatics."
+
+- date: Oct 2024
+  text: "Attending the [European Conference on Computer Vision (ECCV)](https://eccv.ecva.net/), Milan, Italy."
+
+- date: Sept 2024
+  text: "Attending the [German Conference on Pattern Recognition (GCPR)](https://www.gcpr-vmv.de/year/2024), Munich, Germany."
+
+- date: July 2024
+  text: "Attending the [ICVSS Summer School](https://iplab.dmi.unict.it/icvss2024/Home), Sicily, Italy."
+
+- date: July 2024
+  text: "One paper, [Discover-then-Name](https://arxiv.org/abs/2407.14499), accepted at ECCV 2024."
+
+# - date: Nov 2023
+#   text: "Started my PhD at the [Max Planck Institute for Informatics](https://mpi-inf.mpg.de/)."
+
+# - date: July 2023
+#   text: "Selected for the first cohort of the [RTG](https://www.neuroexplicit.org/), funded by the [Deutsche Forschungsgemeinschaft](https://www.dfg.de/en/), to pursue my PhD at the Max Planck Institute for Informatics."
+
+- date: Jan 2023
+  text: "Attended the [Research Week with Google](https://sites.google.com/view/researchweek2023/home)."
+
+# - date: Dec 2022
+#   text: "Attended the [Asian Conference on Machine Learning](https://www.acml-conf.org/2022/)."

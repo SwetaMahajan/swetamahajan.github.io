@@ -1,0 +1,18 @@
+{%- comment -%} Date + text rows. Expects include.items and include.show. {%- endcomment -%}
+{%- assign show = include.show | default: include.items.size -%}
+<ul class="timeline">
+  {%- for item in include.items limit: show %}
+  {% include sections/timeline-item.html item=item %}
+  {%- endfor %}
+</ul>
+{%- if include.items.size > show %}
+<details class="more">
+  <summary><span class="more-closed">Show more</span><span class="more-open">Show less</span></summary>
+  <ul class="timeline">
+    {%- for item in include.items offset: show %}
+    {% include sections/timeline-item.html item=item %}
+    {%- endfor %}
+  </ul>
+  <button type="button" class="more-collapse">Show less</button>
+</details>
+{%- endif %}

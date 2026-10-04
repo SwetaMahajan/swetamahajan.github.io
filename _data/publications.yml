@@ -1,0 +1,67 @@
+# ---------------------------------------------------------------------------
+#  Publications, shown in this order.
+#
+#    title:        paper title
+#    authors:      list of authors; add `equal: true` for equal contribution (*)
+#                  and optionally `url:` to link an author's name
+#    venue:        e.g. "ECCV 2024"
+#    image:        teaser image path (or https:// URL). Leave out for a placeholder.
+#                  Images are shown at a 5:4 ratio without cropping; click to zoom.
+#    image_wide:   true -> show the image across the full width above the text
+#                  (best for wide figures, e.g. a multi-panel Figure 1)
+#    links:        any number of { label, url } shown as  arXiv / Code / ...
+#                  url can be a web link or a file in this repo (assets/files/...)
+#    description:  optional one- or two-sentence summary (Markdown supported)
+# ---------------------------------------------------------------------------
+
+- title: "TEVI: Text-Conditioned Editing of Visual Representations via Sparse Autoencoders for Improved Vision-Language Alignment"
+  authors:
+    - name: Sweta Mahajan
+      equal: true
+    - name: Sukrut Rao
+      url: https://sukrutrao.github.io/
+      equal: true
+    - name: Jiahao Xie
+    - name: Alexander Koller
+      url: https://www.coli.uni-saarland.de/~koller/
+    - name: Bernt Schiele
+      url: https://people.mpi-inf.mpg.de/~schiele
+  venue: EMNLP 2026 (Findings)
+  image: assets/img/publications/tevi.png
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2606.07451
+    - label: Code
+      url: https://github.com/neuroexplicit-saar/TEVI
+  description: >-
+    TEVI is a framework that uses captions to guide the editing of image embeddings via sparse autoencoders, improving vision-language alignment and retrieval performance.
+
+- title: "Discover-then-Name: Task-Agnostic Concept Bottlenecks via Automated Concept Discovery"
+  authors:
+    - name: Sukrut Rao
+      url: https://sukrutrao.github.io/
+      equal: true
+    - name: Sweta Mahajan
+      equal: true
+    - name: Moritz Böhle
+      url: https://moboehle.github.io/
+    - name: Bernt Schiele
+      url: https://people.mpi-inf.mpg.de/~schiele
+  venue: ECCV 2024
+  image: assets/img/publications/discover-then-name.jpg
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2407.14499
+    - label: Code
+      url: https://github.com/neuroexplicit-saar/Discover-then-Name
+    - label: Video
+      url: https://www.youtube.com/watch?v=HEZL3TJCZ44
+    - label: Slides
+      url: assets/files/discover-then-name/slides.pdf
+    - label: Poster
+      url: assets/files/discover-then-name/poster.pdf
+  description: >-
+    DN-CBM inverts the usual concept bottleneck paradigm: instead of pre-selecting
+    concepts for a task, it uses sparse autoencoders to first discover the concepts a
+    CLIP model has learnt, then names them and trains linear probes on top, yielding
+    performant and interpretable classifiers.

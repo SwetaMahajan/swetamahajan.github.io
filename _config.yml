@@ -1,0 +1,48 @@
+# ---------------------------------------------------------------------------
+#  Site settings
+#  Your *content* lives in the _data/ folder. This file only holds settings.
+# ---------------------------------------------------------------------------
+
+# Shown in the browser tab and in link previews (Slack, Twitter, ...).
+title: Sweta Mahajan
+description: >-
+  PhD student at the Max Planck Institute for Informatics working on
+  understanding and improving the reliability of vision-language models.
+
+# Where the site is published.
+#   User site    (repo named <username>.github.io):  url: https://<username>.github.io   baseurl: ""
+#   Project site (any other repo name):               url: https://<username>.github.io   baseurl: "/<repo-name>"
+url: https://swetamahajan.github.io
+baseurl: ""
+
+# Small image shown in the browser tab.
+favicon: assets/img/favicon.png
+
+# Bold your own name in publication author lists (matched against `name` in _data/profile.yml).
+highlight_author: true
+
+# Show "Last updated <date>" in the footer.
+show_last_updated: true
+
+# Color theme.
+#   auto  -> follow the visitor's system setting (light or dark)
+#   light -> always start light
+#   dark  -> always start dark
+default_theme: auto
+# Show a sun/moon button in the top-right corner to switch themes.
+theme_toggle: true
+
+# ---------------------------------------------------------------------------
+#  Build settings (you normally don't need to touch anything below)
+# ---------------------------------------------------------------------------
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor

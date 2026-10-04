@@ -1,0 +1,16 @@
+# ---------------------------------------------------------------------------
+#  Talks, newest first.  Same format as news.yml:  date + text (Markdown).
+# ---------------------------------------------------------------------------
+
+- date: May 2026
+  text: "‘Understanding and Improving Multimodal Models’, [Multimodal AI Lab](https://www.informatik.tu-darmstadt.de/mai/multimodal_ai/index.en.jsp), TU Darmstadt, Germany."
+
+
+- date: May 2026
+  text: "‘Understanding and Improving Multimodal Models’, Computer Vision and Multimodal Learning Un-Workshop, [Tübingen AI Center](https://tuebingen.ai/), Germany."
+
+- date: Nov 2024
+  text: "‘Discover-then-Name: Task-Agnostic Concept Bottlenecks via Automated Concept Discovery‘, DWS Colloquium, University of Mannheim, Germany."
+
+# - date: Nov 2024
+#   text: "IMPRS Research Seminar, Max Planck Institute for Informatics, Saarbrücken, Germany."

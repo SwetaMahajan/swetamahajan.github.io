@@ -1,0 +1,39 @@
+# ---------------------------------------------------------------------------
+#  Header: photo, name, short bio and links
+# ---------------------------------------------------------------------------
+
+name: Sweta Mahajan
+
+# Path to your photo (or a full https:// URL). Portrait or square works best.
+photo: assets/img/profile.jpg
+
+# Your bio. Markdown is supported: [link text](https://...), **bold**, *italic*.
+# Leave an empty line between paragraphs.
+# I am a third-year PhD student in the [Computer Vision and Machine Learning](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning) group at the [Max Planck Institute for Informatics](https://mpi-inf.mpg.de/) (MPI-INF), Saarland, and a member of the [RTG 2853 Neuroexplicit Models of Language, Vision, and Action](https://www.neuroexplicit.org/). I am supervised by [Prof. Bernt Schiele](https://scholar.google.com/citations?user=z76PBfYAAAAJ) and [Prof. Alexander Koller](https://www.coli.uni-saarland.de/~koller/). I am deeply passionate about understanding how multimodal foundation models work and making them more reliable and performant. 
+
+  # Before this, I was a research scholar at [Yardi School of Artificial Intelligence](https://scai.iitd.ac.in), Indian Institute of Technology (IIT) Delhi, with [Prof. Chetan Arora](https://www.cse.iitd.ac.in/~chetan) and [Prof. Parag Singla](https://www.cse.iitd.ac.in/~parags), working on active learning for computer vision and received my BS-MS dual degree from the Department of Mathematics & Statistics, [Indian Institute of Science Education and Research (IISER) Kolkata](https://www.iiserkol.ac.in/).
+
+bio: |
+  
+  I am a PhD student in the [Computer Vision and Machine Learning](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning) group at the [Max Planck Institute for Informatics](https://mpi-inf.mpg.de/) (MPI-INF), Saarbrücken, supervised by [Prof. Bernt Schiele](https://scholar.google.com/citations?user=z76PBfYAAAAJ) and [Prof. Alexander Koller](https://www.coli.uni-saarland.de/~koller/). Since November 2023, I have been part of the [RTG 2853 Neuroexplicit Models of Language, Vision, and Action](https://www.neuroexplicit.org/). My research focuses on understanding how multimodal foundation models work and making them more reliable. 
+
+  Before my PhD, I was a research scholar at the [Yardi School of Artificial Intelligence](https://scai.iitd.ac.in), Indian Institute of Technology (IIT) Delhi, working on active learning for computer vision with [Prof. Chetan Arora](https://www.cse.iitd.ac.in/~chetan) and [Prof. Parag Singla](https://www.cse.iitd.ac.in/~parags). I received my BS-MS dual degree in Mathematics & Statistics from [IISER Kolkata](https://www.iiserkol.ac.in/).
+
+
+
+
+# Links shown under your bio, separated by " / ". Add, remove or reorder freely.
+links:
+  - label: Email
+    url: mailto:sweta.mahajan@mpi-inf.mpg.de
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=n8S_X5MAAAAJ
+  - label: GitHub
+    url: https://github.com/swetamahajan
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/sweta-mahajan/
+  - label: Twitter
+    url: https://twitter.com/swetamahajan1
+
+# Optional line at the bottom of the page (Markdown supported). Uncomment to show.
+# footer: Some text with a [link](https://example.com).

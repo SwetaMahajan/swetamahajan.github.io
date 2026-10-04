@@ -1,0 +1,18 @@
+{%- comment -%} One line per item. Expects include.items and include.show. {%- endcomment -%}
+{%- assign show = include.show | default: include.items.size -%}
+<ul class="plain-list">
+  {%- for item in include.items limit: show %}
+  <li>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+  {%- endfor %}
+</ul>
+{%- if include.items.size > show %}
+<details class="more">
+  <summary><span class="more-closed">Show more</span><span class="more-open">Show less</span></summary>
+  <ul class="plain-list">
+    {%- for item in include.items offset: show %}
+    <li>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+    {%- endfor %}
+  </ul>
+  <button type="button" class="more-collapse">Show less</button>
+</details>
+{%- endif %}
