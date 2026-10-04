@@ -31,6 +31,6 @@ layout: default
 {%- if profile.footer or site.show_last_updated %}
 <footer class="footer">
   {%- if profile.footer %}<span>{{ profile.footer | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>{% endif %}
-  {%- if site.show_last_updated %}<span>Last updated {{ site.time | date: "%B %-d, %Y" }}.</span>{% endif %}
+  {%- if site.show_last_updated %}<span class="footer-updated">Last updated {{ site.time | date: "%B %-d, %Y" }}.</span>{% endif %}
 </footer>
 {%- endif %}

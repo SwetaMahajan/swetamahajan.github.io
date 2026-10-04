@@ -329,12 +329,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  gap: .25rem .5rem;
+  justify-content: space-between;   /* credit on the left, "Last updated" on the right */
+  gap: .25rem 1.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: .8125rem;
 }
+
+.footer-updated { margin-left: auto; }   /* stays right even without a credit line */
 
 /* ---------- Image zoom ---------- */
 .lightbox {
