@@ -10,10 +10,22 @@
 #  Tip: wrap text in double quotes if it contains a colon followed by a space.
 # ---------------------------------------------------------------------------
 
-# - image: assets/img/gallery/rtg-panel-2026.jpg
-#   caption: "Moderating the panel on ‘Research in Industry vs. in Academia’ at the [RTG](https://www.neuroexplicit.org/) retreat"
-#   date: Oct 2026
+- image: assets/img/gallery/exml-seminar-2026.jpg
+  caption: "Intro lecture of the [Explainable Machine Learning seminar](https://cms.sic.saarland/exml_2627/), where I am a teaching assistant"
+  date: Oct 2026
 
-# - image: assets/img/gallery/cvpr-2026.jpg
-#   caption: "At [CVPR 2026](https://cvpr.thecvf.com/), Denver"
-#   date: Jun 2026
+- image: assets/img/gallery/rtg-retreat-panel-2026-2.jpg
+  caption: "Moderating the panel discussion on ‘Research in Industry vs. in Academia’ at the [RTG](https://www.neuroexplicit.org/) retreat"
+  date: Oct 2026
+
+- image: assets/img/gallery/rtg-retreat-panel-2026-1.jpg
+  caption: "With panelists [Nils Reimers](https://www.nils-reimers.de/), [Ellie Pavlick](https://cs.brown.edu/people/epavlick/) and [Patrick Pérez](https://ptrckprz.github.io/)"
+  date: Oct 2026
+
+- image: assets/img/gallery/research-week-google-2023.jpg
+  caption: "At [Research Week with Google](https://sites.google.com/view/researchweek2023/home)"
+  date: Jan 2023
+
+- image: assets/img/gallery/acml-2022.jpg
+  caption: "At the [Asian Conference on Machine Learning (ACML)](https://www.acml-conf.org/2022/)"
+  date: Dec 2022

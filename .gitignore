@@ -5,3 +5,6 @@ _site/
 vendor/
 Gemfile.lock
 .DS_Store
+
+# Full-size gallery photos (resized copies live in assets/img/gallery/)
+_gallery_originals/
