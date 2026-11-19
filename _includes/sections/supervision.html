@@ -1,0 +1,29 @@
+{%- comment -%} Students grouped under subheadings. Expects include.items. {%- endcomment -%}
+{%- for group in include.items %}
+{%- if group.students.size > 0 %}
+<div class="supervision-group">
+  {%- if group.group %}
+  <h3 class="subsection-title">{{ group.group }}</h3>
+  {%- endif %}
+  <ul class="timeline">
+    {%- for s in group.students %}
+    <li class="timeline-item">
+      <span class="timeline-date">{{ s.date }}</span>
+      <span class="timeline-text supervision-text">
+        <span class="supervision-name">{% if s.url %}<a href="{{ s.url }}">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}</span>
+        {%- if s.title %}
+        <span>{{ s.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+        {%- endif %}
+        {%- if s.with %}
+        <span class="supervision-meta">Co-supervised with {{ s.with | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+        {%- endif %}
+        {%- if s.note %}
+        <span class="supervision-meta">{{ s.note | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+        {%- endif %}
+      </span>
+    </li>
+    {%- endfor %}
+  </ul>
+</div>
+{%- endif %}
+{%- endfor %}

@@ -28,6 +28,7 @@ _data/
   news.yml             News items          (date + text)
   publications.yml     Papers              (title, authors, venue, image, links, ...)
   talks.yml            Talks               (date + text)
+  supervision.yml      Student supervision (students grouped under subheadings)
   service.yml          Academic service    (Role: item, item)
 assets/
   img/                 Your photo, favicon and paper images
@@ -108,6 +109,25 @@ For sharp images, export figures from the paper PDF at high resolution (about 20
 
 This renders as **Co-organizer:** Some Workshop (CVPR 2026) on one line, and **Reviewer:** CVPR, ICCV, ECCV, NeurIPS on the next.
 
+### Student supervision: `_data/supervision.yml`
+
+```yaml
+- group: Master Thesis                  # shown as a subheading
+  students:
+    - date: Aug 2025 – Mar 2026
+      name: Student Name
+      url: https://example.com          # optional link on the name
+      title: Thesis title               # optional
+      with: "[Co-supervisor](https://example.com)"   # optional, shown as "Co-supervised with ..."
+      note: "Extension published at [CVPR 2026](https://example.com)"   # optional extra line
+- group: Bachelor Thesis
+  students:
+    - date: Jul 2025 – Oct 2025
+      name: Another Student
+```
+
+Groups appear in the order listed. To add a line under the section heading (for example, who formally supervised the students), add `intro: "..."` to the section in `_data/sections.yml`. This works for any section.
+
 ### Sections: `_data/sections.yml`
 
 Reorder, rename or delete sections, or add your own. For example, to add an **Awards** section, create `_data/awards.yml`:
@@ -121,7 +141,7 @@ and add this to `_data/sections.yml`:
 ```yaml
 - title: Awards
   data: awards        # the file name in _data/, without .yml
-  type: list          # timeline | publications | roles | list
+  type: list          # timeline | publications | roles | list | supervision
 ```
 
 `show: 5` on a `timeline` or `list` section shows only the first 5 items, with a **Show more** button for the rest. A section whose data file is empty or missing is hidden automatically.

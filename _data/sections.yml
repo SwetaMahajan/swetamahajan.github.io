@@ -9,18 +9,25 @@
 #             publications  -> paper cards with image (publications)
 #             roles         -> "Role: item, item"     (academic service)
 #             list          -> one line of text each  (awards, ...)
+#             supervision   -> students under subheadings (student supervision)
 #    show:  (timeline / list only, optional) number of items shown before a
 #           "Show more" button. Leave out to always show everything.
+#    intro: (optional) a short line shown under the heading. Markdown supported.
 # ---------------------------------------------------------------------------
 
 - title: News
   data: news
   type: timeline
-  show: 6
+  show: 9
 
 - title: Selected Publications
   data: publications
   type: publications
+
+- title: Student Supervision
+  data: supervision
+  type: supervision
+  # intro: "All students below were formally supervised by [Prof. Name](https://...), unless noted otherwise."
 
 - title: Talks
   data: talks

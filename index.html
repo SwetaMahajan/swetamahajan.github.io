@@ -13,11 +13,16 @@ layout: default
   {%- if items and items.size > 0 %}
 <section class="section" id="{{ section.title | slugify }}">
   <h2 class="section-title">{{ section.title }}</h2>
+  {%- if section.intro %}
+  <p class="section-intro">{{ section.intro | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+  {%- endif %}
   {%- case section.type %}
     {%- when "publications" %}
       {% include sections/publications.html items=items %}
     {%- when "roles" %}
       {% include sections/roles.html items=items %}
+    {%- when "supervision" %}
+      {% include sections/supervision.html items=items %}
     {%- when "list" %}
       {% include sections/list.html items=items show=section.show %}
     {%- else %}

@@ -1,0 +1,29 @@
+# ---------------------------------------------------------------------------
+#  Student supervision, grouped under subheadings (Master Thesis, Bachelor
+#  Thesis, ...). Groups appear in the order listed; put students newest first.
+#
+#    group:     the subheading
+#    students:  list of students, each with
+#      date:    any text, e.g. "Mar 2026 – Present"
+#      name:    the student's name
+#      url:     (optional) link on the name
+#      title:   (optional) thesis or project title
+#      with:    (optional) co-supervisors, shown as "Co-supervised with ..."
+#      note:    (optional) extra line, e.g. "Extension published at [CVPR 2026](https://...)"
+#  title, with and note support Markdown, e.g. [Name](https://...)
+#  Tip: wrap text in double quotes if it contains a colon followed by a space.
+# ---------------------------------------------------------------------------
+
+# - group: Master Thesis
+#   students:
+#     - date: Aug 2025 – Mar 2026
+#       name: Student Name
+#       url: https://...
+#       title: Thesis title
+#       with: "[Co-supervisor](https://...)"
+
+- group: Student Research Projects
+  students:
+    - date: Mar 2026 – Present
+      name: Tejas Dhopavkar
+      
