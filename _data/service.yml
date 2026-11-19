@@ -8,7 +8,12 @@
 #  Add more roles (e.g. "Area Chair") by copying a block.
 # ---------------------------------------------------------------------------
 
-- role: Co-organizer
+
+- role: Area Chair
+  items:
+    - CVPR 2027
+
+- role: Organizer
   items:
     - "[eXCV Workshop (ECCV 2026)](https://excv-workshop.github.io/)"
     - "[eXCV Workshop (ICCV 2025)](https://excv-workshop.github.io/2025/)"

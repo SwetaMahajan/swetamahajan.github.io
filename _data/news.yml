@@ -4,7 +4,17 @@
 #    text: Markdown supported, e.g. [link text](https://...)
 #  Tip: wrap text in double quotes if it contains a colon followed by a space.
 # ---------------------------------------------------------------------------
+- date: Nov 2026
+  text: "Area Chair, CVPR 2027!"
 
+- date: Nov 2026
+  text: "Serving as TA for [Explainable Machine Learning seminar](https://cms.sic.saarland/exml_2627/). Supervising 2 student research projects!"
+
+- date: Oct 2026 
+  text: "PhD student representative for the [RTG](https://www.neuroexplicit.org/)."
+
+- date: Oct 2026
+  text: "Had a great time moderating the panel discussion on ‘Research in Industry vs. in Academia’ at the [RTG](https://www.neuroexplicit.org/) retreat, with [Patrick Pérez](https://ptrckprz.github.io/) (Google DeepMind), [Nils Reimers](https://www.nils-reimers.de/) (Cohere) and [Ellie Pavlick](https://cs.brown.edu/people/epavlick/) (Brown University)."
 
 - date: Aug 2026
   text: "One paper, [TEVI](https://arxiv.org/abs/2606.07451), accepted at EMNLP (Findings) 2026. See you in Budapest!"
