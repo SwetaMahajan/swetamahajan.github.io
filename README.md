@@ -24,14 +24,17 @@ A clean, single-page academic website for GitHub Pages. It works on phones, tabl
 _config.yml            Site settings: title, description, URL
 _data/
   profile.yml          Your name, photo, bio and links (Email / Scholar / ...)
+  navigation.yml       Links in the bar at the top of every page
   sections.yml         Which sections appear, their titles and order
   news.yml             News items          (date + text)
   publications.yml     Papers              (title, authors, venue, image, links, ...)
   talks.yml            Talks               (date + text)
   supervision.yml      Student supervision (students grouped under subheadings)
   service.yml          Academic service    (Role: item, item)
+  gallery.yml          Photos on the Gallery page (image + caption + date)
+gallery.html           The Gallery page (at /gallery/)
 assets/
-  img/                 Your photo, favicon and paper images
+  img/                 Your photo, favicon, paper images and gallery/ photos
   files/               PDFs (slides, posters, CV, ...)
   css/main.css         Colors and fonts (Theme section at the top)
 
@@ -64,6 +67,31 @@ links:
     url: assets/files/cv.pdf
 footer: Optional small text at the bottom of the page.
 ```
+
+### Top bar: `_data/navigation.yml`
+
+Your name (from `profile.yml`) is shown on the left of the bar and links home. The links on the right come from this file:
+
+```yaml
+- label: Publications
+  url: /#selected-publications   # a section of the home page
+- label: Gallery
+  url: /gallery/                 # another page
+```
+
+A section's id is its title in `sections.yml`, lowercase with dashes ("Selected Publications" → `selected-publications`). If you rename a section, update its link too. The bar stays at the top while scrolling, underlines the section being read, and turns into a menu button on phones. Its color is `--nav-bg` in `assets/css/main.css`.
+
+### Gallery: `_data/gallery.yml`
+
+Put photos in `assets/img/gallery/` and list them, newest first:
+
+```yaml
+- image: assets/img/gallery/cvpr-2026.jpg
+  caption: "At [CVPR 2026](https://cvpr.thecvf.com/), Denver"   # optional
+  date: Jun 2026                                                 # optional
+```
+
+Photos are cropped to 4:3 in the grid and shown in full when clicked. JPGs about 1600px wide keep the page fast.
 
 ### News or talks: `_data/news.yml`, `_data/talks.yml`
 
@@ -148,7 +176,7 @@ and add this to `_data/sections.yml`:
 
 ### Colors and fonts: `assets/css/main.css`
 
-Edit the variables in the **Theme** block at the top of the file (`--link`, `--link-hover`, `--font`, ...). The dark-theme colors are in the block just below it.
+Edit the variables in the **Theme** block at the top of the file (`--link`, `--link-hover`, `--nav-bg`, `--font`, ...). The dark-theme colors are in the block just below it.
 
 ### Dark theme
 

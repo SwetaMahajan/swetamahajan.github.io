@@ -1,0 +1,37 @@
+---
+layout: default
+title: Gallery
+permalink: /gallery/
+# Optional line under the heading (Markdown supported). Uncomment to show.
+# intro: "Moments from conferences, talks and workshops."
+---
+{%- comment -%}
+  Photos come from _data/gallery.yml. You shouldn't need to edit this file.
+{%- endcomment -%}
+{%- assign photos = site.data.gallery %}
+<section class="section" id="gallery">
+  <h1 class="section-title">{{ page.title }}</h1>
+  {%- if page.intro %}
+  <p class="section-intro">{{ page.intro | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+  {%- endif %}
+  {%- if photos and photos.size > 0 %}
+  <div class="gallery">
+    {%- for p in photos %}
+    {%- assign alt = p.caption | markdownify | strip_html | strip | escape %}
+    <figure class="gallery-item">
+      <button type="button" class="gallery-zoom" data-zoom="{{ p.image | relative_url }}" aria-label="Enlarge photo{% if alt != '' %}: {{ alt }}{% endif %}">
+        <img src="{{ p.image | relative_url }}" alt="{{ alt }}" loading="lazy">
+      </button>
+      {%- if p.caption or p.date %}
+      <figcaption class="gallery-caption">
+        {%- if p.date %}<span class="gallery-date">{{ p.date }}</span>{% endif %}
+        {%- if p.caption %}<span>{{ p.caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>{% endif %}
+      </figcaption>
+      {%- endif %}
+    </figure>
+    {%- endfor %}
+  </div>
+  {%- else %}
+  <p class="gallery-empty">Photos coming soon.</p>
+  {%- endif %}
+</section>

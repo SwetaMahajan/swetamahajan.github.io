@@ -35,7 +35,62 @@
     });
   }
 
-  // Click a publication image to zoom; click anywhere or press Esc to close.
+  // Top bar: menu button on phones, and underline the section being read.
+  var navbar = document.getElementById('navbar');
+  if (navbar) {
+    var menuBtn = navbar.querySelector('.navbar-menu-btn');
+    var navLinks = navbar.querySelectorAll('.navbar-links a');
+    var setMenu = function (open) {
+      navbar.classList.toggle('is-open', open);
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    if (menuBtn) {
+      menuBtn.addEventListener('click', function () {
+        setMenu(!navbar.classList.contains('is-open'));
+      });
+    }
+    navLinks.forEach(function (a) {
+      a.addEventListener('click', function () { setMenu(false); });
+    });
+    document.addEventListener('click', function (e) {
+      if (!navbar.contains(e.target)) setMenu(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setMenu(false);
+    });
+
+    // Links to sections of this page, paired with the section they point to.
+    var spied = [];
+    navLinks.forEach(function (a) {
+      if (a.hash && a.pathname === location.pathname) {
+        var el = document.getElementById(decodeURIComponent(a.hash.slice(1)));
+        if (el) spied.push({ link: a, el: el });
+      }
+    });
+    if (spied.length) {
+      var ticking = false;
+      var spy = function () {
+        ticking = false;
+        var line = navbar.offsetHeight + 24;
+        var atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+        var current = null;
+        var best = -Infinity;
+        // The lowest section whose heading has scrolled past the bar
+        // (or the last section once the page is scrolled to the bottom).
+        spied.forEach(function (s) {
+          var top = s.el.getBoundingClientRect().top;
+          if ((atBottom || top <= line) && top > best) { best = top; current = s; }
+        });
+        spied.forEach(function (s) { s.link.classList.toggle('active', s === current); });
+      };
+      window.addEventListener('scroll', function () {
+        if (!ticking) { ticking = true; window.requestAnimationFrame(spy); }
+      }, { passive: true });
+      spy();
+    }
+  }
+
+  // Click a publication or gallery image to zoom; click anywhere or press Esc to close.
   var box = document.getElementById('lightbox');
   if (!box) return;
   var img = box.querySelector('img');

@@ -1,0 +1,29 @@
+# ---------------------------------------------------------------------------
+#  Links in the bar at the top of every page, left to right.
+#  Your name is shown on the left automatically (from profile.yml).
+#
+#    label: text shown in the bar
+#    url:   a section of the home page: /#<section-id>
+#           or another page:            /gallery/
+#  A section's id is its title in sections.yml, lowercase with dashes,
+#  e.g. "Selected Publications" -> /#selected-publications
+#  If you rename a section, update its link here too.
+# ---------------------------------------------------------------------------
+
+- label: News
+  url: /#news
+
+- label: Publications
+  url: /#selected-publications
+
+- label: Supervision
+  url: /#student-supervision
+
+- label: Talks
+  url: /#talks
+
+- label: Service
+  url: /#academic-service
+
+- label: Gallery
+  url: /gallery/

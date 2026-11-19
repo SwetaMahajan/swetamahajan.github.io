@@ -1,0 +1,19 @@
+# ---------------------------------------------------------------------------
+#  Gallery photos, shown on the /gallery/ page in this order (newest first).
+#
+#    image:   path to the photo, e.g. assets/img/gallery/cvpr-2026.jpg
+#    caption: (optional) text under the photo. Markdown supported.
+#    date:    (optional) any text, e.g. "Jun 2026"
+#
+#  Put the photos in assets/img/gallery/. Photos are cropped to 4:3 in the grid
+#  and shown in full when clicked. JPGs about 1600px wide keep the page fast.
+#  Tip: wrap text in double quotes if it contains a colon followed by a space.
+# ---------------------------------------------------------------------------
+
+# - image: assets/img/gallery/rtg-panel-2026.jpg
+#   caption: "Moderating the panel on ‘Research in Industry vs. in Academia’ at the [RTG](https://www.neuroexplicit.org/) retreat"
+#   date: Oct 2026
+
+# - image: assets/img/gallery/cvpr-2026.jpg
+#   caption: "At [CVPR 2026](https://cvpr.thecvf.com/), Denver"
+#   date: Jun 2026

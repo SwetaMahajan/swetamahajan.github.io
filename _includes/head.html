@@ -1,5 +1,6 @@
 {%- assign profile = site.data.profile -%}
 {%- assign page_title = site.title | default: profile.name -%}
+{%- if page.title %}{% assign page_title = page.title | append: " | " | append: page_title %}{% endif -%}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
