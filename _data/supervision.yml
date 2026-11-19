@@ -22,8 +22,14 @@
 #       title: Thesis title
 #       with: "[Co-supervisor](https://...)"
 
-- group: Student Research Projects
+- group: Student Supervision
   students:
+    - date: Nov 2026 – Present
+      name: Ankit Khatiwada
+
+    - date: Nov 2026 – Present
+      name: Tuğçe Türkmenler
+
     - date: Mar 2026 – Present
       name: Tejas Dhopavkar
       
