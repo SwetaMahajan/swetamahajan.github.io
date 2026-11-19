@@ -295,6 +295,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   font-weight: 500;
 }
 .supervision-group .timeline-item + .timeline-item { margin-top: 1rem; }
+.supervision-group .timeline-date { white-space: nowrap; }   /* "Nov 2026 – Present" on one line */
 .supervision-text { display: flex; flex-direction: column; }
 .supervision-name { font-weight: 500; }
 .supervision-meta { color: var(--muted); }
@@ -528,6 +529,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   .subsection-title { font-size: 1.1rem; }
 
   .timeline-item { grid-template-columns: 6.5rem minmax(0, 1fr); font-size: 1rem; }
+  .supervision-group .timeline-item { grid-template-columns: 10.5rem minmax(0, 1fr); }   /* wide enough for "Aug 2025 – Mar 2026" */
   .plain-list, .roles { font-size: 1rem; }
   .more > summary, .more-collapse { font-size: 1rem; }
 
