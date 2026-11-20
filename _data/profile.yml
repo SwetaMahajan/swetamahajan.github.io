@@ -34,6 +34,8 @@ links:
     url: https://www.linkedin.com/in/sweta-mahajan/
   - label: Twitter
     url: https://twitter.com/swetamahajan1
+  - label: CV
+    url: assets/files/cv.pdf
 
 # Optional line at the bottom of the page (Markdown supported). Uncomment to show.
 footer: Design inspired by [Jon Barron's website](https://jonbarron.info/).
